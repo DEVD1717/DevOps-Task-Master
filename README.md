@@ -2,6 +2,10 @@
  Containerizing a Full-Stack Web Application
 
 
+devops-task-master - it contains 4 files
+
+
+
 Containerizing the application using Docker and Docker Compose provided a scalable and portable solution, making deployment across different environments consistent and efficient. Each decision aimed to enhance security, optimize performance, and simplify maintenance, preparing the application for production use.
 
 
@@ -15,6 +19,7 @@ Frontend Dockerfile:
 Chose a multi-stage build to reduce image size and improve security.
 Used the node:20-alpine image in the first stage to install dependencies and build the React app.
 In the second stage, used nginx:alpine to serve the built static files, making the image lighter and more secure.
+
 Backend Dockerfile:
 Used node:20-alpine as the base image to keep the backend image small and focused on running the Express server.
 
